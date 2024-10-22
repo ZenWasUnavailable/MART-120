@@ -1,0 +1,55 @@
+<html>
+
+    <head>
+        <title>Wanna contact me? Fill out some things here: </title>
+        <h1>Wanna contact me? Fill out some things here:</h1>
+    
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script>
+            var name = getElementById("name").value;
+            var email = getElementById("email").value
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td>Email Address</td>
+                <td><input type="text" id="email"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button id="btnSubmit" onClick="getData();">Submit</button></td>
+            </tr>
+        </table>
+        <span id="nameTag"> This is the name tag</span>
+        <br>
+        <span id="emailTag"> This is the email tag</span> 
+            </tr>
+        </table>
+        <div id="finalResult"></div>
+        
+        <br>
+        <script>
+            document.getElementById("nameTag").innerHTML = "Pleasure to meet you " + name;
+            document.getElementById("emailTag").innerHTML = "Your email adress is " + email
+        </script>
+        <br>
+        <h2>Do you accept the terms of agreement???</h2>
+        <form action="Homework6Page3.html" type="POST">
+            <table>
+                <tr>
+                    <td>
+                        <input type="radio" name="terms" value="Yeah">Yeah<br>
+                        <input type="radio" name="terms" value="No">No<br>
+                        <input type="radio" name="terms" value="What terms?">Terms?<br>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+    <a href="Homework6.html">Go To First Page</a>
+    <a href="Homework6Page2.html">Go To Second Page</a>
+</html>
